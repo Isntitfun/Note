@@ -1,0 +1,40 @@
+.note-header {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 10px;
+  position: fixed;
+  right: 20px;
+  left: 20px;
+  top: 20px;
+  height: 100px;
+  padding: 10px 20px;
+}
+
+.note-header__title {
+  margin: 0px 10px;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.note-header__links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.note-header__link {
+  margin-left: 8px;
+}
+.note-header__link img {
+  opacity: 0.7;
+  transition: all 0.1s ease-out;
+}
+
+.note-header__link img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transform: translateY(-3px);
+}
