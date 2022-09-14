@@ -1,3 +1,12 @@
+@keyframes titleShowUP {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.07);
   border-radius: 10px;
@@ -23,7 +32,8 @@ header {
   font-weight: 500;
   text-decoration: overline;
   opacity: 0.65;
-  transition: all 0.1s ease-out;
+  transition: all 0.3s ease-out;
+  animation: titleShowUp 2s ease-in-out forwards;
 }
 
 .note-header__links {
