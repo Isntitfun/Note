@@ -1,21 +1,29 @@
-.note-header {
-  background-color: rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+header {
+  background-color: rgba(0, 0, 0, 0.07);
   border-radius: 10px;
   position: fixed;
   right: 20px;
   left: 20px;
   top: 20px;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 10px 20px;
+  height: 100px;
 }
 
 .note-header__title {
-  margin: 0px 10px;
+  margin: 0px 20px;
   font-size: 60px;
   font-weight: 500;
+  text-decoration: overline;
+  opacity: 0.65;
+  transition: all 0.1s ease-out;
 }
 
 .note-header__links {
@@ -37,4 +45,37 @@
   opacity: 1;
   transform: scale(1.1);
   transform: translateY(-3px);
+}
+
+.note-header__title:hover {
+  opacity: 0.95;
+  transform: scale(1.1);
+}
+
+.subheader {
+  background-color: rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.subheader__essential-info {
+  text-align: center;
+}
+
+.subheader__essential-info:first-child {
+  width: 80px;
+}
+
+.subheader__essential-info:last-child {
+  width: 200px;
+}
+
+.subheader__essential-info:hover {
+  font-weight: 600;
 }

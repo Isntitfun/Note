@@ -4,6 +4,8 @@
 
 html {
   font-family: "Dosis", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 body {
   background-color: rgb(255, 255, 255);
